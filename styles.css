@@ -1,0 +1,73 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 239, 241);
+    font-family: 'Roboto', sans-serif;
+}
+
+.card{
+    width: 350px;
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 10px 10px 16px #888888;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.card_image img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.profile_image img{
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-top: -75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 10px solid #fff;
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.profile_image img:hover{
+    transform: scale(1.1);
+}
+
+.profile_name h2{
+    text-align: center;
+    margin-top: 0;
+}
+.profile_name p{
+    padding: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.card_links{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.card_links a{
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(47, 141, 185);
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+.card_links a:hover{
+    transform: scale(1.4);
+    color: rgb(65, 63, 63);
+}
